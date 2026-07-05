@@ -2,7 +2,7 @@
 title: "1 Introduction"
 description: "Introduction and outline of program</br>[Photo CC0 by Mabel Amber on pexels.com]{.copyright}"
 image: thumbnails/hello.jpg
-author: Audrey Yeo T. Y.
+author: Daniel Sabanés Bové
 ---
 
 ## Disclaimer
@@ -10,7 +10,7 @@ author: Audrey Yeo T. Y.
 {{< include _disclaimer.qmd >}}
 
 
-## Welcome to GSWEP4R at ISCB46!
+## Welcome to GSWEP4R at SAIHST!
 
 \
 \
@@ -23,45 +23,6 @@ _We have an open source spirit here. Please sit with someone you do not already 
 
 
 Be Curious. Be Respectful. Be Kind.
-
-## Audrey
-
-::: columns
-::: {.column width="30%"}
-![](resources/audrey.jpg)
-:::
-::: {.column width="70%"}
--   M Sci Biostatistics (Zurich), M Nursing (Sydney)
--   Currently : Founder of [Finc-Research](https://finc-research.com)
--   Previously : Master Thesis in Longitudinal Cluster Analysis, Biostatistician at Roche for 4 years, Paeds / Onc RN from Melbourne, Australia
--   Lead developer of `phase1b` package, Bayesian Framework for Clinical Trials and
-    `openstatsware` member
--   Enjoys developing statistical software, especially writing tests
--   Connect on
-    [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/audreyyeo8000/)
-    [`r fontawesome::fa("github")`](https://github.com/audreyyeocH)
-    [`r fontawesome::fa("globe")`](https://www.finc-research.com)
-:::
-:::
-
-## Alessandro
-
-::: columns
-::: {.column width="30%"}
-![](resources/alessandro.jpg)
-:::
-
-::: {.column width="70%"}
--   Ph.D. in Biostatistics from the University of Leicester with a thesis on hierarchical modelling (longitudinal, survival)
--   Currently a biostatistician at [Red Door Analytics AB](https://reddooranalytics.se/) in Stockholm, Sweden since November 2022
--   Previously: post-doc researcher and biostatistician at Karolinska Institutet, Stockholm, Sweden
--   Maintainer of multiple R packages on CRAN, contributor to several other, co-chair of the `openstatsware` working group
--   Connect on
-    [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/ellessenne)
-    [`r fontawesome::fa("github")`](https://www.github.com/ellessenne)
-    [`r fontawesome::fa("globe")`](https://www.ellessenne.xyz/)
-:::
-:::
 
 ## Daniel
 
@@ -118,9 +79,9 @@ readr::read_csv("resources/program.csv", col_types = "cc") |>
 
 ## House-keeping
 
--   Course website at [openstatsware.github.io/shortcourse-iscb2025](https://openstatsware.github.io/shortcourse-iscb2025)
+-   Course website at [openstatsware.github.io/shortcourse-seoul2026](https://openstatsware.github.io/shortcourse-seoul2026)
     -   all slides
-    -   sources available at [github.com/openstatsware/shortcourse-iscb2025](https://github.com/openstatsware/shortcourse-iscb2025)
+    -   sources available at [github.com/openstatsware/shortcourse-seoul2026](https://github.com/openstatsware/shortcourse-seoul2026)
     -   all materials CC-BY-SA 4.0
 
 ## What you will need
@@ -287,13 +248,16 @@ check out the [diversity alliance hackathon on Sep 30](https://www.linkedin.com/
   Philippe Boileau
   [`r fontawesome::fa("github")`](https://github.com/philboileau)
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/philippe-boileau-773270205/)
-  [`r fontawesome::fa("globe")`](https://pboileau.ca/)
-- In the current version, changes were done by (later authors):
+  [`r fontawesome::fa("globe")`](https://pboileau.ca/),
   Audrey Yeo Te-ying
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/audreyyeo8000/)
-  [`r fontawesome::fa("github")`](https://github.com/audreyyeocH)
+  [`r fontawesome::fa("github")`](https://github.com/audreyyeocH),
   Alessandro Gasparini
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/ellessenne)
   [`r fontawesome::fa("github")`](https://www.github.com/ellessenne)
+- In the Seoul 2026 version, changes were done by:
+  Daniel Sabanés Bové
+  [`r fontawesome::fa("github")`](https://github.com/danielinteractive/)
+  [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/)
 
 {{< include _license_footer.qmd >}}

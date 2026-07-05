@@ -15,32 +15,34 @@ Creators (initial authors):
 - Lukas A. Widmer, https://github.com/luwidmer and https://www.linkedin.com/in/lukas-widmer-37800b9b/
 - Michael Mayer, https://www.linkedin.com/in/drmichaelmayer/
 - Louisa H. Smith, https://www.linkedin.com/in/louisahsmith/
-
-The current version was edited by
 - Audrey T. Yeo, https://github.com/audreyyeoCH and https://www.linkedin.com/in/audrey-yeo-8000/
 - Alessandro Gasparini, https://github.com/ellessenne and https://www.linkedin.com/in/ellessenne/
+
+The Seoul 2026 version was edited by
 - Daniel Sabanés Bové, https://github.com/danielinteractive/ and https://www.linkedin.com/in/danielsabanesbove/
 
 License: In general unless otherwise stated, his work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
-The source files are hosted at https://github.com/openstatsware/shortcourse-iscb2025, which is forked from
-the original version at https://github.com/RCONIS/workshop-r-swe-zrh
+The source files are hosted at https://github.com/openstatsware/shortcourse-seoul2026, which is forked from
+https://github.com/openstatsware/shortcourse-iscb2025
 
 Important: To use this work you must provide the name of the creators (initial authors), a link to the material, a link to the license, and indicate if changes were made.
 -->
 
-Welcome to the homepage of the short course *"Good Software Engineering Practice for R Packages"*, a pre-conference course for the [46^th^ Annual Conference of the International Society for Clinical Biostatistics (ISCB)](https://iscb2025.info).
+Welcome to the homepage of the short course *"Good Software Engineering Practice for R Packages"* at the Samsung Advanced Institute for Health Sciences & Technology (SAIHST), Sungkyunkwan University.
 In this course you will learn hands-on skills and tools to engineer reliable R packages used in statistics.
 The short course will be conducted in a full day and will be a mix of presentations and exercises.
 Participants need to be comfortable with writing functions in R and use their own laptops as a prerequisite.
 
 ## Event Details
 
-The event will be held on Sunday, 24^th^ of August 2025 as an in-person workshop at the [Biozentrum](https://www.biozentrum.unibas.ch) of the [University of Basel](https://www.unibas.ch/en), in room _Biozentrum U1.101_.
-Please refer to the [conference agenda](https://www.conftool.org/iscb2025/sessions.php) for more details.
+The event will be held on Friday, 17^th^ of July 2026, from 09:00 to 17:00 as an in-person workshop at the [Samsung Advanced Institute for Health Sciences & Technology (SAIHST), Sungkyunkwan University](https://saihst.skku.edu/).
+The venue is _Hippocrates Hall_, 9^th^ floor, Building B, Samsung Life Insurance Ilwon Station Building.
 
-The instructors for this workshop will be Audrey T. Yeo, Alessandro Gasparini and Daniel Sabanés Bové.
-You can learn more about them in the [introduction section](slides/01_intro.qmd).
+The instructor for this workshop will be Daniel Sabanés Bové.
+You can learn more about him in the [introduction section](slides/01_intro.qmd).
+
+Please [register for the workshop](https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd.in%2FgJkx-jHy&urlhash=cE5D&mt=dtLTGjOro8tfUeghAMBspqQhl8E9Z7jmx_sit_XuyfkYoJMhFhHhHZKeEZiqaL23URYtOXeVo-KDS6_5DrkyCJdTVeGYTrtxJylR7qdXJ9WeEXdBFVv9an_6bg&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BJomzNqmuRPWvTRjDRAAN%2FQ%3D%3D) in advance.
 
 ## Workshop Program
 
@@ -78,6 +80,8 @@ For the course, participants are required to use their own laptop to be able to 
 
 ## Material from Past Events
 
+- [10th October 2025, Paris, FR](https://rconis.github.io/SnB2025-shortcourse/)
+- [24th August 2025, Basel, CH](https://openstatsware.github.io/shortcourse-iscb2025/)
 - [8th April 2025, Tokyo, JP](https://www.linkedin.com/posts/yuichi-nakajima-8984759a_r-package-development-workshop-by-daniel-activity-7305102975851511810-QPl_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAeLiYUB2lCTxf2k2-ROB6XktxT7lyQYIaQ)
 - [8th July 2024, Salzburg, AT](https://rconis.github.io/user2024-tutorial-gswep/)
 - [18th and 19th April 2024, Zurich, CH](https://rconis.github.io/workshop-r-swe-zrh/)

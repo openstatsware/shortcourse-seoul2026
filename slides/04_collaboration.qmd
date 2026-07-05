@@ -2,7 +2,7 @@
 title: "4 Version Control and Collaboration"
 description: "Collaboration via GitHub + practical<br/>[Photo CC0 by THIS IS ZUN on pexels.com]{.copyright}"
 image: thumbnails/collaboration.jpg
-author: Alessandro Gasparini
+author: Daniel Sabanés Bové
 ---
 
 ```{r, echo = FALSE, results = 'hide'}
@@ -19,7 +19,7 @@ author: Alessandro Gasparini
 ::: {.absolute bottom="100" left="0"}
 -   Overview, demo, practical
 -   Can only scratch surface
--   More resources on the course [website](https://openstatsware.github.io/shortcourse-iscb2025/#optional-reading-list)
+-   More resources on the course [website](https://openstatsware.github.io/shortcourse-seoul2026/#optional-reading-list)
 :::
 
 ::: footer
@@ -386,7 +386,7 @@ sequenceDiagram
 
 ## Demo
 
-- Thanks to Audrey for helping me in this demo!
+- Thanks to Audrey for helping with this demo!
 - How do we publish a repository on GitHub?
 - How do we add a collaborator on GitHub?
 - How does a pull request work?
@@ -415,14 +415,14 @@ Don't panic if it looks confusing - we are going to help you to get this going.
 
 - Creators (initial authors):
   Kevin Kunzmann [`r fontawesome::fa("github")`](https://github.com/kkmann/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/kevin-kunzmann-6486a11bb/),
-  Shuang Li [`r fontawesome::fa("github")`](https://github.com/shuangli22)
-- In the current version, changes were done by (later authors):
-  Daniel Sabanés Bové
-  [`r fontawesome::fa("github")`](https://github.com/danielinteractive/)
-  [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/),
+  Shuang Li [`r fontawesome::fa("github")`](https://github.com/shuangli22),
   Alessandro Gasparini
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/ellessenne)
   [`r fontawesome::fa("github")`](https://www.github.com/ellessenne)
   [`r fontawesome::fa("globe")`](https://www.ellessenne.xyz/)
+- In the Seoul 2026 version, changes were done by:
+  Daniel Sabanés Bové
+  [`r fontawesome::fa("github")`](https://github.com/danielinteractive/)
+  [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/)
 
 {{< include _license_footer.qmd >}}

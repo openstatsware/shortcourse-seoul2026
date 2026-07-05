@@ -2,7 +2,7 @@
 title: "5 Publication"
 description: "Publication of R packages + practical<br/>[Photo CC0 by Andrea Piacquadio on pexels.com]{.copyright}"
 image: thumbnails/publish.jpg
-author: Audrey Yeo T. Y.
+author: Daniel Sabanés Bové
 ---
 
 ```{r, echo = FALSE, results = 'hide'}
@@ -329,8 +329,7 @@ rcmdcheck::rcmdcheck("myrootdir", args = "--as-cran")
 
 - Creators (initial authors):
   Daniel Sabanés Bové [`r fontawesome::fa("github")`](https://github.com/danielinteractive/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/),
-  Friedrich Pahlke [`r fontawesome::fa("github")`](https://github.com/fpahlke/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/pahlke/)
-- In the current version, changes were done by (later authors):
+  Friedrich Pahlke [`r fontawesome::fa("github")`](https://github.com/fpahlke/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/pahlke/),
   Liming Li [`r fontawesome::fa("github")`](https://github.com/clarkliming),
   Philippe Boileau [`r fontawesome::fa("globe")`](https://pboileau.ca/),
   Alessandro Gasparini [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/ellessenne) [`r fontawesome::fa("github")`](https://www.github.com/ellessenne) [`r fontawesome::fa("globe")`](https://www.ellessenne.xyz/),

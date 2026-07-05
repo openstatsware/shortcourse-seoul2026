@@ -23,18 +23,10 @@ author: Daniel Sabanés Bové
 
 ::: {.column width="70%"}
 - to you for your engagement and participation `r emoji::emoji("folded_hands")`
-- to the ISCB organizers to make this event possible `r emoji::emoji("clap")`
+- to the SAIHST organizers for making this event possible `r emoji::emoji("clap")`
 - to our fellow `openstatsware` authors of the course materials `r emoji::emoji("books")`
 :::
 :::
-
-# Temperature check
-
-## Enter slido.com: 2189872
-
-![](resources/temp_check_iscb2025.png)
-
-##  {background-iframe="https://app.sli.do/event/bWPx6dbm8K1F31GJ2oMabQ" background-interactive="true"}
 
 # Take away messages
 

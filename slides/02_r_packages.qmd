@@ -2,7 +2,7 @@
 title: "2 R packages"
 description: "R package syntax + practical"
 image: thumbnails/packages.jpg
-author: Alessandro Gasparini
+author: Daniel Sabanés Bové
 ---
 
 ## Disclaimer
@@ -404,8 +404,7 @@ $\leadsto$ We will be using this package throughout the day!
 # License information {.smaller}
 
 - Creators (initial authors):
-  Daniel Sabanés Bové [`r fontawesome::fa("github")`](https://github.com/danielinteractive/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/)
-- In the current version, changes were done by (later authors):
+  Daniel Sabanés Bové [`r fontawesome::fa("github")`](https://github.com/danielinteractive/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/),
   Liming Li [`r fontawesome::fa("github")`](https://github.com/clarkliming),
   Philippe Boileau [`r fontawesome::fa("globe")`](https://pboileau.ca/),
   Alessandro Gasparini [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/ellessenne) [`r fontawesome::fa("github")`](https://www.github.com/ellessenne) [`r fontawesome::fa("globe")`](https://www.ellessenne.xyz/)

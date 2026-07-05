@@ -5,7 +5,7 @@ project:
 website:
   title: "GSWEP4R Workshop"
   description: "`openstatsware` Workshop: Good Software Engineering Practice with R"
-  site-url: https://openstatsware.github.io/shortcourse-iscb2025/
+  site-url: https://openstatsware.github.io/shortcourse-seoul2026/
   search: true
   navbar:
     left:
@@ -20,7 +20,7 @@ website:
       - text: "About `openstatsware`"
         href: https://openstatsware.org/
       - text: "Source Code on GitHub"
-        href: https://github.com/openstatsware/shortcourse-iscb2025
+        href: https://github.com/openstatsware/shortcourse-seoul2026
 
 format:
   html:
