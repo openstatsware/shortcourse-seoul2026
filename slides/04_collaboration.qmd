@@ -89,10 +89,10 @@ Photo from <a href="https://unsplash.com/@timmossholder?utm_source=unsplash&utm_
 
 ```{mermaid}
 flowchart LR
-  A[Alessandro v1] --> B[Alessandro v2]
-  B --> C[Alessandro v3]
-  B --> D[Audrey v1]
-  D --> E[Audrey + Alessandro v4]
+  A[Anna v1] --> B[Anna v2]
+  B --> C[Anna v3]
+  B --> D[Ben v1]
+  D --> E[Anna + Ben v4]
   C --> E
 ```
 
@@ -353,9 +353,9 @@ gitGraph
 
 ```{mermaid}
 sequenceDiagram
-    participant A as Alessandro
+    participant A as Anna
     participant GH as GitHub server
-    participant B as Audrey
+    participant B as Ben
     A->>A: make change locally & commit to <feature>
     A->>GH: push commit
     A->>GH: open pull request
@@ -386,7 +386,6 @@ sequenceDiagram
 
 ## Demo
 
-- Thanks to Audrey for helping with this demo!
 - How do we publish a repository on GitHub?
 - How do we add a collaborator on GitHub?
 - How does a pull request work?
@@ -420,9 +419,5 @@ Don't panic if it looks confusing - we are going to help you to get this going.
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/ellessenne)
   [`r fontawesome::fa("github")`](https://www.github.com/ellessenne)
   [`r fontawesome::fa("globe")`](https://www.ellessenne.xyz/)
-- In the Seoul 2026 version, changes were done by:
-  Daniel Sabanés Bové
-  [`r fontawesome::fa("github")`](https://github.com/danielinteractive/)
-  [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/)
 
 {{< include _license_footer.qmd >}}

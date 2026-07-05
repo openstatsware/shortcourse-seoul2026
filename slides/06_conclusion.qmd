@@ -23,7 +23,7 @@ author: Daniel Sabanés Bové
 
 ::: {.column width="70%"}
 - to you for your engagement and participation `r emoji::emoji("folded_hands")`
-- to the SAIHST organizers for making this event possible `r emoji::emoji("clap")`
+- to the SAIHST organizers, in particular Sang Ho Park, for making this event possible `r emoji::emoji("clap")`
 - to our fellow `openstatsware` authors of the course materials `r emoji::emoji("books")`
 :::
 :::
@@ -70,6 +70,7 @@ author: Daniel Sabanés Bové
 
 ## Possible next steps
 
+-   Bookmark the [`openstatsguide`](https://www.openstatsware.org/guide.html) as a quick reference for good practices for R package development
 -   Bring the information back to your colleagues in your organization
 -   Start building your first own package and share internally first
 -   Later publish it open source on GitHub and submit it to CRAN

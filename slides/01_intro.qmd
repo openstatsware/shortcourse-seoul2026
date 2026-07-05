@@ -12,19 +12,14 @@ author: Daniel Sabanés Bové
 
 ## Welcome to GSWEP4R at SAIHST!
 
-\
-\
+삼성헬스케어과학기술원(SAIHST)에서 주최하는 R 패키지 활용 우수 소프트웨어 엔지니어링 실무 워크숍에 오신 것을 환영합니다! `r emoji("korea")`
 
-_We have an open source spirit here. Please sit with someone you do not already know._
+I have enjoyed the 33rd International
+Biometric Conference in Seoul and am looking forward to teaching today's workshop! `r emoji("smile")`
 
+Big thanks to Sang Ho Park for the local organization `r emoji("folded_hands")`
 
-\
-\
-
-
-Be Curious. Be Respectful. Be Kind.
-
-## Daniel
+## Daniel Sabanés Bové
 
 ::: columns
 ::: {.column width="30%"}
@@ -33,13 +28,14 @@ Be Curious. Be Respectful. Be Kind.
 
 ::: {.column width="70%"}
 -   Ph.D. in Statistics from University of Zurich, Bayesian Model Selection
--   Biostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for the last 4 years
--   Co-founder of [inferential.bio](https://inferential.bio) and [RCONIS](https://rconis.com)
+-   Biostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for 4 years
+-   Happy Taipei expat since summer 2024, where I started roadbiking `r emoji("biking")`
+-   Co-founder of [inferential.bio](https://inferential.bio), [RCONIS](https://rconis.com) and partner at [RPACT](https://rpact.com)
 -   Multiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of `openstatsware`
 -   Feel free to connect
     [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/)
     [`r fontawesome::fa("github")`](https://github.com/danielinteractive)
-    [`r fontawesome::fa("globe")`](https://rconis.com)
+    [`r fontawesome::fa("globe")`](https://rpact.com)
 :::
 :::
 
@@ -48,9 +44,9 @@ Be Curious. Be Respectful. Be Kind.
 ::: columns
 ::: {.column width="70%"}
 - [openstatsware.org](https://openstatsware.org)
-- Since: 19 August 2022 - already 3 years now!
+- Since: 19 August 2022 - already 4 years now!
 - Where: American Statistical Association (ASA) Biopharmaceutical Section (BIOP), European Federation of Statisticians in the Pharmaceutical Industry (EFSPI)
-- Who: Currently more than 60 statisticians from more than 30 organizations
+- Who: Currently more than 40 statisticians from more than 30 organizations
 - What: Engineer packages and promote best practices
 :::
 
@@ -92,7 +88,6 @@ readr::read_csv("resources/program.csv", col_types = "cc") |>
     -   Rtools/R/Rstudio IDE `r fontawesome::fa("r-project")`
 -   Install additional R packages using the [installation script](slides/download/install.R)
 -   Curiosity `r emoji::emoji("curious")`
--   Positive attitude `r emoji::emoji("smile")`
 
 ## Speed intros and what would you like to learn?
 
@@ -134,8 +129,6 @@ readr::read_csv("resources/program.csv", col_types = "cc") |>
 6.  Refactor and optimize code
 7.  Version your code
 8.  Share as 'bundle'
-
-_Be aware that starting small is also learning a new set of vocabulary. Engineering terms are active, and specific. We're here to bring you along!_
 
 $\leadsto$ R package
 
@@ -221,12 +214,6 @@ knitr::include_graphics("resources/pkg_graph.png")
     -   reusable
     -   shareable
     -   easier to document
-
-# Extra motivation for today's course:
-
-check out the [diversity alliance hackathon on Sep 30](https://www.linkedin.com/posts/open-source-in-pharma_diversity-alliance-hackathon-rpharma-activity-7355688433186422784-XDpd/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAm-hUYBK6599wxUyoAYIPTNW2hexCikETs) and see if you can apply today's learned skills there!
-
-# Question, comments?
 
 # License information {.smaller}
 

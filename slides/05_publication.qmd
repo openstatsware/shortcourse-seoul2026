@@ -246,62 +246,6 @@ git diff v0.3.14 v0.3.15 # checking for difference in mmrm release
 - [CRAN Repository Policy](https://cran.r-project.org/web/packages/policies.html)
 - [Bioconductor packages](https://contributions.bioconductor.org/index.html)
 
-## Quick quiz (one correct answer only){.smaller}
-
-::: columns
-::: {.column width="45%"}
-1. I am cloning / forking a repo that has an MIT license. Which license shall I use if I want to make modification and distribute my new package?
-\
-\
-\
-a. MIT license
-b. Any license
-c. No license because that assumes transfer of my rights from the original repo's MIT license
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="45%"}
-2. I want to build a website for my package. Which file can I *mainly* configure my website in?
-\
-\
-\
-\
-a. `_pkgdown.yml` file
-b. `.gitignore`
-c. Any `.Rd` file
-:::
-:::
-
-## Quick quiz (solution){.smaller}
-
-::: columns
-::: {.column width="45%"}
-1. I am cloning / forking a repo that has an MIT license. Which license shall I use if I want to make modification and distribute my new package?
-\
-\
-\
-a. MIT license
-b. **Any license**
-c. No license because that assumes transfer of my rights from the original repo's MIT license
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="45%"}
-2. I want to build a website for my package. Which file can I *mainly* configure my website in?
-\
-\
-\
-\
-a. **`_pkgdown.yml` file**
-b. `.gitignore`
-c. Any `.Rd` file
-:::
-:::
-
 # Exercise{.smaller}
 
 Use your project from *chapter 2* :
@@ -319,8 +263,8 @@ rcmdcheck::rcmdcheck("myrootdir", args = "--as-cran")
 
 - Look at the CI/CD checks reported on your GitHub repository
   - Where are the `R CMD check` results?
-- Enable GitHub page through `use_pkgdown_github_pages`
-  - ([`use_pkgdown_github_pages`](https://pkgdown.r-lib.org/articles/pkgdown.html) includes: `use_pkgdown()`, `use_github_pages()`, `use_github_action("pkgdown")`)
+- Enable GitHub page through [`use_pkgdown_github_pages()`](https://pkgdown.r-lib.org/articles/pkgdown.html) 
+  - Note: This includes `use_pkgdown()`, `use_github_pages()`, `use_github_action("pkgdown")`
 - Deploy the website with `pkgdown`
 - Set up a GitHub action to deploy website `use_github_action("pkgdown")`
   - (Optional) Check the automatic GitHub page deploy action
