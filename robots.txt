@@ -1,0 +1,1 @@
+Sitemap: https://openstatsware.github.io/shortcourse-seoul2026/sitemap.xml

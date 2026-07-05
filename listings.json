@@ -1,0 +1,13 @@
+[
+  {
+    "listing": "/listing.html",
+    "items": [
+      "/slides/01_intro.html",
+      "/slides/02_r_packages.html",
+      "/slides/03_quality.html",
+      "/slides/04_collaboration.html",
+      "/slides/05_publication.html",
+      "/slides/06_conclusion.html"
+    ]
+  }
+]
