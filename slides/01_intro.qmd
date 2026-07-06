@@ -12,12 +12,12 @@ author: Daniel Sabanés Bové
 
 ## Welcome to GSWEP4R at SAIHST!
 
-삼성헬스케어과학기술원(SAIHST)에서 주최하는 R 패키지 활용 우수 소프트웨어 엔지니어링 실무 워크숍에 오신 것을 환영합니다! `r emoji("korea")`
+삼성헬스케어과학기술원(SAIHST)에서 주최하는 R 패키지 활용 우수 소프트웨어 엔지니어링 실무 워크숍에 오신 것을 환영합니다! `r emoji::emoji("korea")`
 
 I have enjoyed the 33rd International
-Biometric Conference in Seoul and am looking forward to teaching today's workshop! `r emoji("smile")`
+Biometric Conference in Seoul and am looking forward to teaching today's workshop! `r emoji::emoji("smile")`
 
-Big thanks to Sang Ho Park for the local organization `r emoji("folded_hands")`
+Big thanks to Sang Ho Park for the local organization `r emoji::emoji("folded_hands")`
 
 ## Daniel Sabanés Bové
 
@@ -29,7 +29,7 @@ Big thanks to Sang Ho Park for the local organization `r emoji("folded_hands")`
 ::: {.column width="70%"}
 -   Ph.D. in Statistics from University of Zurich, Bayesian Model Selection
 -   Biostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for 4 years
--   Happy Taipei expat since summer 2024, where I started roadbiking `r emoji("biking")`
+-   Happy Taipei expat since summer 2024, where I started roadbiking `r emoji::emoji("biking")`
 -   Co-founder of [inferential.bio](https://inferential.bio), [RCONIS](https://rconis.com) and partner at [RPACT](https://rpact.com)
 -   Multiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of `openstatsware`
 -   Feel free to connect
