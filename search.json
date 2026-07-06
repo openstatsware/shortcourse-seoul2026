@@ -137,7 +137,7 @@
     "href": "slides/05_publication.html#r-hub-platforms",
     "title": "5 Publication",
     "section": "R-Hub platforms",
-    "text": "R-Hub platforms\n\nlibrary(rhub)\nrhub::rhub_platforms()\n\n── Virtual machines ───────────────────────────────────────────────────────────\n 1 [VM]  linux\n   All R versions on GitHub Actions ubuntu-latest\n 2 [VM]  m1-san\n   All R versions on GitHub Actions macos-15, ASAN + UBSAN on macOS\n 3 [VM]  macos\n   All R versions on GitHub Actions macos-15-intel\n 4 [VM]  macos-arm64\n   All R versions on GitHub Actions macos-latest\n 5 [VM]  windows\n   All R versions on GitHub Actions windows-latest\n\n── Containers ─────────────────────────────────────────────────────────────────\n 6 [CT]  atlas  [ATLAS]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/atlas:latest\n 7 [CT]  c23  [C23]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/c23:latest\n 8 [CT]  clang-asan  [asan, clang-ASAN]\n   R Under development (unstable) (2026-07-03 r90206) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang-asan:latest\n 9 [CT]  clang-ubsan  [clang-UBSAN, ubsan]\n   R Under development (unstable) (2026-07-03 r90206) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang-ubsan:latest\n10 [CT]  clang16  [clang16]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang16:latest\n11 [CT]  clang17  [clang17]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang17:latest\n12 [CT]  clang18  [clang18]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang18:latest\n13 [CT]  clang19  [clang19]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang19:latest\n14 [CT]  clang20  [clang20]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang20:latest\n15 [CT]  clang21  [clang21]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang21:latest\n16 [CT]  clang22  [clang22]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang22:latest\n17 [CT]  donttest  [donttest]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/donttest:latest\n18 [CT]  gcc-asan  [gcc-ASAN, gcc-UBSAN]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/gcc-asan:latest\n19 [CT]  gcc13  [gcc13]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 38 (Conta…\n   ghcr.io/r-hub/containers/gcc13:latest\n20 [CT]  gcc14  [gcc14]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 40 (Conta…\n   ghcr.io/r-hub/containers/gcc14:latest\n21 [CT]  gcc15  [gcc15]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/gcc15:latest\n22 [CT]  gcc16  [gcc16]\n   R Under development (unstable) (2026-07-03 r90206) on Fedora Linux 44 (Conta…\n   ghcr.io/r-hub/containers/gcc16:latest\n23 [CT]  intel  [Intel]\n   R Under development (unstable) (2026-02-19 r89439) on Fedora Linux 38 (Conta…\n   ghcr.io/r-hub/containers/intel:latest\n24 [CT]  lto  [LTO]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/lto:latest\n25 [CT]  mkl  [MKL]\n   R Under development (unstable) (2026-07-03 r90206) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/mkl:latest\n26 [CT]  nold  [noLD]\n   R Under development (unstable) (2026-07-03 r90206) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/nold:latest\n27 [CT]  noremap  [noRemap]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/noremap:latest\n28 [CT]  nosuggests  [noSuggests]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/nosuggests:latest\n29 [CT]  rchk  [rchk]\n   R Under development (unstable) (2026-07-03 r90206) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/rchk:latest\n30 [CT]  ubuntu-clang  [r-devel-linux-x86_64-debian-clang]\n   R Under development (unstable) (2026-07-03 r90206) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/ubuntu-clang:latest\n31 [CT]  ubuntu-gcc12  [r-devel-linux-x86_64-debian-gcc]\n   R Under development (unstable) (2026-04-13 r89874) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/ubuntu-gcc12:latest\n32 [CT]  ubuntu-next  [r-next, r-patched, r-patched-linux-x86_64]\n   R version 4.6.1 RC (2026-06-18 r90185) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/ubuntu-next:latest\n33 [CT]  ubuntu-release  [r-release, r-release-linux-x86_64, ubuntu]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/ubuntu-release:latest\n34 [CT]  valgrind  [valgrind]\n   R Under development (unstable) (2026-07-03 r90206) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/valgrind:latest\n35 [CT]  vnu  [vnu]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/vnu:latest"
+    "text": "R-Hub platforms\n\nlibrary(rhub)\nrhub::rhub_platforms()\n\n── Virtual machines ───────────────────────────────────────────────────────────\n 1 [VM]  linux\n   All R versions on GitHub Actions ubuntu-latest\n 2 [VM]  m1-san\n   All R versions on GitHub Actions macos-15, ASAN + UBSAN on macOS\n 3 [VM]  macos\n   All R versions on GitHub Actions macos-15-intel\n 4 [VM]  macos-arm64\n   All R versions on GitHub Actions macos-latest\n 5 [VM]  windows\n   All R versions on GitHub Actions windows-latest\n\n── Containers ─────────────────────────────────────────────────────────────────\n 6 [CT]  atlas  [ATLAS]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/atlas:latest\n 7 [CT]  c23  [C23]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/c23:latest\n 8 [CT]  clang-asan  [asan, clang-ASAN]\n   R Under development (unstable) (2026-07-04 r90207) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang-asan:latest\n 9 [CT]  clang-ubsan  [clang-UBSAN, ubsan]\n   R Under development (unstable) (2026-07-04 r90207) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang-ubsan:latest\n10 [CT]  clang16  [clang16]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang16:latest\n11 [CT]  clang17  [clang17]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang17:latest\n12 [CT]  clang18  [clang18]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang18:latest\n13 [CT]  clang19  [clang19]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang19:latest\n14 [CT]  clang20  [clang20]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang20:latest\n15 [CT]  clang21  [clang21]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang21:latest\n16 [CT]  clang22  [clang22]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang22:latest\n17 [CT]  donttest  [donttest]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/donttest:latest\n18 [CT]  gcc-asan  [gcc-ASAN, gcc-UBSAN]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/gcc-asan:latest\n19 [CT]  gcc13  [gcc13]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 38 (Conta…\n   ghcr.io/r-hub/containers/gcc13:latest\n20 [CT]  gcc14  [gcc14]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 40 (Conta…\n   ghcr.io/r-hub/containers/gcc14:latest\n21 [CT]  gcc15  [gcc15]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/gcc15:latest\n22 [CT]  gcc16  [gcc16]\n   R Under development (unstable) (2026-07-04 r90207) on Fedora Linux 44 (Conta…\n   ghcr.io/r-hub/containers/gcc16:latest\n23 [CT]  intel  [Intel]\n   R Under development (unstable) (2026-02-19 r89439) on Fedora Linux 38 (Conta…\n   ghcr.io/r-hub/containers/intel:latest\n24 [CT]  lto  [LTO]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/lto:latest\n25 [CT]  mkl  [MKL]\n   R Under development (unstable) (2026-07-04 r90207) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/mkl:latest\n26 [CT]  nold  [noLD]\n   R Under development (unstable) (2026-07-04 r90207) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/nold:latest\n27 [CT]  noremap  [noRemap]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/noremap:latest\n28 [CT]  nosuggests  [noSuggests]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/nosuggests:latest\n29 [CT]  rchk  [rchk]\n   R Under development (unstable) (2026-07-04 r90207) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/rchk:latest\n30 [CT]  ubuntu-clang  [r-devel-linux-x86_64-debian-clang]\n   R Under development (unstable) (2026-07-04 r90207) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/ubuntu-clang:latest\n31 [CT]  ubuntu-gcc12  [r-devel-linux-x86_64-debian-gcc]\n   R Under development (unstable) (2026-04-13 r89874) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/ubuntu-gcc12:latest\n32 [CT]  ubuntu-next  [r-next, r-patched, r-patched-linux-x86_64]\n   R version 4.6.1 RC (2026-06-18 r90185) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/ubuntu-next:latest\n33 [CT]  ubuntu-release  [r-release, r-release-linux-x86_64, ubuntu]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/ubuntu-release:latest\n34 [CT]  valgrind  [valgrind]\n   R Under development (unstable) (2026-07-04 r90207) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/valgrind:latest\n35 [CT]  vnu  [vnu]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/vnu:latest"
   },
   {
     "objectID": "slides/05_publication.html#github-actions",
@@ -182,20 +182,6 @@
     "text": "A Note on Bioconductor\n\nThe Bioconductor project develops, supports, and disseminates open source software for the analysis of biological assays\nLike CRAN, Bioconductor has additional package requirements: one can only submit either to CRAN or Bioconductor\nPackages are peer reviewed by community members\nNew packages and updates to existing packages are released semi-annually\nSoftware is expected to be interoperable with other Bioconductor packages through the re-use of common data structures and infrastructure"
   },
   {
-    "objectID": "slides/05_publication.html#quick-quiz-one-correct-answer-only",
-    "href": "slides/05_publication.html#quick-quiz-one-correct-answer-only",
-    "title": "5 Publication",
-    "section": "Quick quiz (one correct answer only)",
-    "text": "Quick quiz (one correct answer only)\n\n\n\nI am cloning / forking a repo that has an MIT license. Which license shall I use if I want to make modification and distribute my new package?\n\n\n\n\n\nMIT license\nAny license\nNo license because that assumes transfer of my rights from the original repo’s MIT license\n\n\n\n\n\nI want to build a website for my package. Which file can I mainly configure my website in?\n\n\n\n\n\n\n_pkgdown.yml file\n.gitignore\nAny .Rd file"
-  },
-  {
-    "objectID": "slides/05_publication.html#quick-quiz-solution",
-    "href": "slides/05_publication.html#quick-quiz-solution",
-    "title": "5 Publication",
-    "section": "Quick quiz (solution)",
-    "text": "Quick quiz (solution)\n\n\n\nI am cloning / forking a repo that has an MIT license. Which license shall I use if I want to make modification and distribute my new package?\n\n\n\n\n\nMIT license\nAny license\nNo license because that assumes transfer of my rights from the original repo’s MIT license\n\n\n\n\n\nI want to build a website for my package. Which file can I mainly configure my website in?\n\n\n\n\n\n\n_pkgdown.yml file\n.gitignore\nAny .Rd file"
-  },
-  {
     "objectID": "slides/04_collaboration.html#disclaimer",
     "href": "slides/04_collaboration.html#disclaimer",
     "title": "4 Version Control and Collaboration",
@@ -228,7 +214,7 @@
     "href": "slides/04_collaboration.html#version-control-systems-vcs",
     "title": "4 Version Control and Collaboration",
     "section": "Version control systems (VCS)",
-    "text": "Version control systems (VCS)\n\nManage different versions of a piece of work\nCompare and merge diverged versions effectively1\n\n\n\n\n\n\nflowchart LR\n  A[Alessandro v1] --&gt; B[Alessandro v2]\n  B --&gt; C[Alessandro v3]\n  B --&gt; D[Audrey v1]\n  D --&gt; E[Audrey + Alessandro v4]\n  C --&gt; E\n\n\n\n\n\n\n\nCode is complex system \\(\\leadsto\\) ideal application of VCS\nCompounded by multiple people fiddling with it!\n\nMerging parallel edits is not simple: try merging multiple copies of the same document, each including feedback from your co-authors, using MS Word…"
+    "text": "Version control systems (VCS)\n\nManage different versions of a piece of work\nCompare and merge diverged versions effectively1\n\n\n\n\n\n\nflowchart LR\n  A[Anna v1] --&gt; B[Anna v2]\n  B --&gt; C[Anna v3]\n  B --&gt; D[Ben v1]\n  D --&gt; E[Anna + Ben v4]\n  C --&gt; E\n\n\n\n\n\n\n\nCode is complex system \\(\\leadsto\\) ideal application of VCS\nCompounded by multiple people fiddling with it!\n\nMerging parallel edits is not simple: try merging multiple copies of the same document, each including feedback from your co-authors, using MS Word…"
   },
   {
     "objectID": "slides/04_collaboration.html#enter-git",
@@ -319,7 +305,7 @@
     "href": "slides/04_collaboration.html#a-typical-github-workflow",
     "title": "4 Version Control and Collaboration",
     "section": "A typical GitHub workflow",
-    "text": "A typical GitHub workflow\n\n\n\n\n\nsequenceDiagram\n    participant A as Alessandro\n    participant GH as GitHub server\n    participant B as Audrey\n    A-&gt;&gt;A: make change locally & commit to &lt;feature&gt;\n    A-&gt;&gt;GH: push commit\n    A-&gt;&gt;GH: open pull request\n    GH-&gt;&gt;GH: run automated checks\n    A-&gt;&gt;B: request review\n    B-&gt;&gt;B: review code\n    B-&gt;&gt;A: request changes\n    A-&gt;&gt;A: implement changes locally & commit\n    A-&gt;&gt;GH: push commit\n    GH-&gt;&gt;GH: run automated checks\n    A-&gt;&gt;B: request review\n    B-&gt;&gt;B: review code\n    B-&gt;&gt;GH: approve changes, unblocking merge\n    A-&gt;&gt;GH: merge &lt;feature&gt; into &lt;main&gt;\n    GH-&gt;&gt;GH: run automated checks on &lt;main&gt;\n    B-&gt;&gt;GH: pull newest version of &lt;main&gt;"
+    "text": "A typical GitHub workflow\n\n\n\n\n\nsequenceDiagram\n    participant A as Anna\n    participant GH as GitHub server\n    participant B as Ben\n    A-&gt;&gt;A: make change locally & commit to &lt;feature&gt;\n    A-&gt;&gt;GH: push commit\n    A-&gt;&gt;GH: open pull request\n    GH-&gt;&gt;GH: run automated checks\n    A-&gt;&gt;B: request review\n    B-&gt;&gt;B: review code\n    B-&gt;&gt;A: request changes\n    A-&gt;&gt;A: implement changes locally & commit\n    A-&gt;&gt;GH: push commit\n    GH-&gt;&gt;GH: run automated checks\n    A-&gt;&gt;B: request review\n    B-&gt;&gt;B: review code\n    B-&gt;&gt;GH: approve changes, unblocking merge\n    A-&gt;&gt;GH: merge &lt;feature&gt; into &lt;main&gt;\n    GH-&gt;&gt;GH: run automated checks on &lt;main&gt;\n    B-&gt;&gt;GH: pull newest version of &lt;main&gt;"
   },
   {
     "objectID": "slides/04_collaboration.html#looks-awfully-complicated-why",
@@ -333,7 +319,7 @@
     "href": "slides/04_collaboration.html#demo",
     "title": "4 Version Control and Collaboration",
     "section": "Demo",
-    "text": "Demo\n\nThanks to Audrey for helping with this demo!\nHow do we publish a repository on GitHub?\nHow do we add a collaborator on GitHub?\nHow does a pull request work?\n\n\n\nThese are the first steps for setting up the next practical.\nDon’t panic if it looks confusing - we are going to help you to get this going."
+    "text": "Demo\n\nHow do we publish a repository on GitHub?\nHow do we add a collaborator on GitHub?\nHow does a pull request work?\n\n\n\nThese are the first steps for setting up the next practical.\nDon’t panic if it looks confusing - we are going to help you to get this going."
   },
   {
     "objectID": "slides/04_collaboration.html#practical---collaboration-on-github",
@@ -648,7 +634,7 @@
     "href": "slides/06_conclusion.html#thank-you",
     "title": "6 Conclusion",
     "section": "Thank you …",
-    "text": "Thank you …\n\n\n\n\n\nto you for your engagement and participation 🙏\nto the SAIHST organizers for making this event possible 👏\nto our fellow openstatsware authors of the course materials 📚"
+    "text": "Thank you …\n\n\n\n\n\nto you for your engagement and participation 🙏\nto the SAIHST organizers, in particular Sang Ho Park, for making this event possible 👏\nto our fellow openstatsware authors of the course materials 📚"
   },
   {
     "objectID": "slides/06_conclusion.html#r-package-structure",
@@ -683,7 +669,7 @@
     "href": "slides/06_conclusion.html#possible-next-steps",
     "title": "6 Conclusion",
     "section": "Possible next steps",
-    "text": "Possible next steps\n\nBring the information back to your colleagues in your organization\nStart building your first own package and share internally first\nLater publish it open source on GitHub and submit it to CRAN\nLearn about more tips and tricks how to extend R\n\n\nPhoto by Pixabay on pexels.com"
+    "text": "Possible next steps\n\nBookmark the openstatsguide as a quick reference for good practices for R package development\nBring the information back to your colleagues in your organization\nStart building your first own package and share internally first\nLater publish it open source on GitHub and submit it to CRAN\nLearn about more tips and tricks how to extend R\n\n\nPhoto by Pixabay on pexels.com"
   },
   {
     "objectID": "slides/01_intro.html#disclaimer",
@@ -697,21 +683,21 @@
     "href": "slides/01_intro.html#welcome-to-gswep4r-at-saihst",
     "title": "1 Introduction",
     "section": "Welcome to GSWEP4R at SAIHST!",
-    "text": "Welcome to GSWEP4R at SAIHST!\n\n\n\nWe have an open source spirit here. Please sit with someone you do not already know.\n\n\n\nBe Curious. Be Respectful. Be Kind."
+    "text": "Welcome to GSWEP4R at SAIHST!\n삼성헬스케어과학기술원(SAIHST)에서 주최하는 R 패키지 활용 우수 소프트웨어 엔지니어링 실무 워크숍에 오신 것을 환영합니다! 🇰🇷\nI have enjoyed the 33rd International Biometric Conference in Seoul and am looking forward to teaching today’s workshop! 😄\nBig thanks to Sang Ho Park for the local organization 🙏"
   },
   {
-    "objectID": "slides/01_intro.html#daniel",
-    "href": "slides/01_intro.html#daniel",
+    "objectID": "slides/01_intro.html#daniel-sabanés-bové",
+    "href": "slides/01_intro.html#daniel-sabanés-bové",
     "title": "1 Introduction",
-    "section": "Daniel",
-    "text": "Daniel\n\n\n\n\n\nPh.D. in Statistics from University of Zurich, Bayesian Model Selection\nBiostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for the last 4 years\nCo-founder of inferential.bio and RCONIS\nMultiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of openstatsware\nFeel free to connect"
+    "section": "Daniel Sabanés Bové",
+    "text": "Daniel Sabanés Bové\n\n\n\n\n\nPh.D. in Statistics from University of Zurich, Bayesian Model Selection\nBiostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for 4 years\nHappy Taipei expat since summer 2024, where I started roadbiking 🚴\nCo-founder of inferential.bio, RCONIS and partner at RPACT\nMultiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of openstatsware\nFeel free to connect"
   },
   {
     "objectID": "slides/01_intro.html#openstatsware",
     "href": "slides/01_intro.html#openstatsware",
     "title": "1 Introduction",
     "section": "openstatsware",
-    "text": "openstatsware\n\n\n\nopenstatsware.org\nSince: 19 August 2022 - already 3 years now!\nWhere: American Statistical Association (ASA) Biopharmaceutical Section (BIOP), European Federation of Statisticians in the Pharmaceutical Industry (EFSPI)\nWho: Currently more than 60 statisticians from more than 30 organizations\nWhat: Engineer packages and promote best practices"
+    "text": "openstatsware\n\n\n\nopenstatsware.org\nSince: 19 August 2022 - already 4 years now!\nWhere: American Statistical Association (ASA) Biopharmaceutical Section (BIOP), European Federation of Statisticians in the Pharmaceutical Industry (EFSPI)\nWho: Currently more than 40 statisticians from more than 30 organizations\nWhat: Engineer packages and promote best practices"
   },
   {
     "objectID": "slides/01_intro.html#what-you-will-learn-here",
@@ -739,14 +725,14 @@
     "href": "slides/01_intro.html#what-you-will-need",
     "title": "1 Introduction",
     "section": "What you will need",
-    "text": "What you will need\n\nGithub.com (free) account \nLocal R development environment with\n\ngit \nRtools/R/Rstudio IDE \n\nInstall additional R packages using the installation script\nCuriosity 🦝\nPositive attitude 😄"
+    "text": "What you will need\n\nGithub.com (free) account \nLocal R development environment with\n\ngit \nRtools/R/Rstudio IDE \n\nInstall additional R packages using the installation script\nCuriosity 🦝"
   },
   {
     "objectID": "slides/01_intro.html#speed-intros-and-what-would-you-like-to-learn",
     "href": "slides/01_intro.html#speed-intros-and-what-would-you-like-to-learn",
     "title": "1 Introduction",
     "section": "Speed intros and what would you like to learn?",
-    "text": "Speed intros and what would you like to learn?\n\nName? 🌎\nOrganization? 🏢\nMotivation for this workshop/ what would you like to learn 🧠\nFavorite food? 🥖\nFavorite music? 🎤"
+    "text": "Speed intros and what would you like to learn?\n\nName? 🌎\nOrganization? 🏢\nMotivation for this workshop/ what would you like to learn 🧠\nFavorite food? 🍠\nFavorite music? 🎹"
   },
   {
     "objectID": "slides/01_intro.html#what-do-we-mean-by-gswep4r",
@@ -767,7 +753,7 @@
     "href": "slides/01_intro.html#start-small---from-script-to-package",
     "title": "1 Introduction",
     "section": "Start small - from script to package",
-    "text": "Start small - from script to package\n\nEncapsulate behavior (functions)\nAvoid global state/variables\nAdopt consistent coding style\nDocument well\nAdd test cases\nRefactor and optimize code\nVersion your code\nShare as ‘bundle’\n\nBe aware that starting small is also learning a new set of vocabulary. Engineering terms are active, and specific. We’re here to bring you along!\n\\(\\leadsto\\) R package"
+    "text": "Start small - from script to package\n\nEncapsulate behavior (functions)\nAvoid global state/variables\nAdopt consistent coding style\nDocument well\nAdd test cases\nRefactor and optimize code\nVersion your code\nShare as ‘bundle’\n\n\\(\\leadsto\\) R package"
   },
   {
     "objectID": "slides/01_intro.html#the-r-package-ecosystem---huge-success",
