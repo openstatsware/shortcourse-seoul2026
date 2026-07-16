@@ -5,10 +5,6 @@ image: thumbnails/quality.jpg
 author: Daniel Sabanés Bové
 ---
 
-## Disclaimer
-
-{{< include _disclaimer.qmd >}}
-
 # Quality by design: recommended workflow
 
 ![[Photo CC0 by Kateryna Babaieva on pexels.com]{.copyright}](thumbnails/workflow3.jpg){fig-align="center"}

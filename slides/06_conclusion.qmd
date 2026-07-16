@@ -10,11 +10,7 @@ author: Daniel Sabanés Bové
 # Quarto will not render embedded R code unless at least one R code chunk exists
 ```
 
-## Disclaimer
-
-{{< include _disclaimer.qmd >}}
-
-## Thank you ...
+## 감사합니다 !
 
 ::: columns
 ::: {.column width="30%"}

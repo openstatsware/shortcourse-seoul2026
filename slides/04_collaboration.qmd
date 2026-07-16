@@ -10,10 +10,6 @@ author: Daniel Sabanés Bové
 # Quarto will not render embedded R code unless at least one R code chunk exists
 ```
 
-## Disclaimer
-
-{{< include _disclaimer.qmd >}}
-
 ## {background-image="resources/scratch.jpg"}
 
 ::: {.absolute bottom="100" left="0"}
