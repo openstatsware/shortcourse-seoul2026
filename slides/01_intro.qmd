@@ -5,11 +5,6 @@ image: thumbnails/hello.jpg
 author: Daniel Sabanés Bové
 ---
 
-## Disclaimer
-
-{{< include _disclaimer.qmd >}}
-
-
 ## Welcome to GSWEP4R at SAIHST!
 
 삼성헬스케어과학기술원(SAIHST)에서 주최하는 R 패키지 활용 우수 소프트웨어 엔지니어링 실무 워크숍에 오신 것을 환영합니다! `r emoji::emoji("korea")`
@@ -23,7 +18,7 @@ Big thanks to Sang Ho Park for the local organization `r emoji::emoji("folded_ha
 
 ::: columns
 ::: {.column width="30%"}
-![](resources/daniel.jpg)
+![Feel free to connect [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/) [`r fontawesome::fa("github")`](https://github.com/danielinteractive) [`r fontawesome::fa("globe")`](https://rpact.com)](resources/daniel.jpg)
 :::
 
 ::: {.column width="70%"}
@@ -32,10 +27,6 @@ Big thanks to Sang Ho Park for the local organization `r emoji::emoji("folded_ha
 -   Happy Taipei expat since summer 2024, where I started roadbiking `r emoji::emoji("biking")`
 -   Co-founder of [inferential.bio](https://inferential.bio), [RCONIS](https://rconis.com) and partner at [RPACT](https://rpact.com)
 -   Multiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of `openstatsware`
--   Feel free to connect
-    [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/)
-    [`r fontawesome::fa("github")`](https://github.com/danielinteractive)
-    [`r fontawesome::fa("globe")`](https://rpact.com)
 :::
 :::
 
@@ -64,38 +55,14 @@ Big thanks to Sang Ho Park for the local organization `r emoji::emoji("folded_ha
 -   Get crash-course in version control and modern collaboration techniques on GitHub.com
 -   Learn how to make an R `r fontawesome::fa("cube")` available to others
 
-## Program outline
+## Do we still need to learn this - AI can do it?
 
-```{r}
-#| echo: false
-#| style: font-size:0.8em!important;
-readr::read_csv("resources/program.csv", col_types = "cc") |>
-    knitr::kable(col.names = c("", ""))
-```
-
-## House-keeping
-
--   Course website at [openstatsware.github.io/shortcourse-seoul2026](https://openstatsware.github.io/shortcourse-seoul2026)
-    -   all slides
-    -   sources available at [github.com/openstatsware/shortcourse-seoul2026](https://github.com/openstatsware/shortcourse-seoul2026)
-    -   all materials CC-BY-SA 4.0
-
-## What you will need
-
--   [Github.com](https://github.com/) (free) account `r fontawesome::fa("github")`
--   Local R development environment with
-    -   git `r fontawesome::fa("git-alt")`
-    -   Rtools/R/Rstudio IDE `r fontawesome::fa("r-project")`
--   Install additional R packages using the [installation script](slides/download/install.R)
--   Curiosity `r emoji::emoji("curious")`
-
-## Speed intros and what would you like to learn?
-
-- Name? `r emoji::emoji("earth")`
-- Organization? `r emoji::emoji("office")`
-- Motivation for this workshop/ what would you like to learn `r emoji::emoji("brain")`
-- Favorite food? `r emoji::emoji("food")`
-- Favorite music? `r emoji::emoji("music")`
+-  In the past, carpenters exclusively used saw, hand drill, and hammer
+-  For a long time now, we have power tools, like electric saws and drills
+-  And we have had computer aided design (CAD) software for decades
+-  We have even 3D printers, which can produce furniture directly
+-  Nevertheless, carpenters still start their apprenticeship by learning how to use a saw and hammer, and build furniture by hand
+- In the same way, we still need to learn the basics of good software engineering, even though AI tools can help us later to execute the work faster and more efficiently
 
 ## What do we mean by GSWEP4R\*?
 
@@ -132,88 +99,89 @@ readr::read_csv("resources/program.csv", col_types = "cc") |>
 
 $\leadsto$ R package
 
-## The R package ecosystem - huge success
+## Program outline
 
-```{r cran-pkg-network, echo=FALSE}
-if (!file.exists("resources/pkg_graph.png")) {
-    # primitive caching
-    library(tidyverse)
-    local({
-        r <- getOption("repos")
-        r["CRAN"] <- "https://cloud.r-project.org"
-        options(repos = r)
-    })
-    # get pkg cumulative downloads from last month
-    db <- tools::CRAN_package_db()
-    tbl_dl_ <- db %>%
-        group_by(chunk = row_number() %/% 100) %>% # chunk to comply with API limit
-        nest() %>%
-        mutate(
-            res = purrr::map2(
-                data,
-                chunk,
-                function(data, id) {
-                    cranlogs::cran_downloads(
-                        data$Package,
-                        when = "last-month"
-                    ) %>%
-                        group_by(package) %>%
-                        summarize(count = sum(count))
-                }
-            )
-        ) %>%
-        ungroup() %>%
-        select(res) %>%
-        unnest(res) %>%
-        distinct()
-    tbl_dl <- filter(tbl_dl_, count >= 10000L, !is.na(count))
-    tbl_deps <- tools::package_dependencies(
-        tbl_dl$package,
-        which = c("Imports", "Depends", "LinkingTo")
-    ) %>%
-        enframe(name = "from", value = "to") %>%
-        unnest(to)
-    grph_deps <- tidygraph::as_tbl_graph(tbl_deps) %>%
-        left_join(
-            tbl_dl_,
-            by = c(name = "package")
-        ) %>%
-        filter(!is.na(count)) # remove base packages
-    plt <- ggraph::ggraph(grph_deps, layout = "linear", circular = TRUE) +
-        ggraph::geom_edge_link(alpha = .033) +
-        ggraph::geom_node_label(
-            aes(
-                label = if_else(
-                    count > quantile(count, 0.975, na.rm = TRUE),
-                    name,
-                    NA_character_
-                )
-            ),
-            repel = TRUE
-        ) +
-        ggraph::theme_graph()
-    ggsave(
-        "resources/pkg_graph.png",
-        plot = plt,
-        width = 8,
-        height = 8 / 1.61,
-        dpi = 300
-    )
-}
-knitr::include_graphics("resources/pkg_graph.png")
+```{r}
+#| echo: false
+#| style: font-size:0.8em!important;
+readr::read_csv("resources/program.csv", col_types = "cc") |>
+    knitr::kable(col.names = c("", ""))
 ```
 
-##  {background-iframe="https://pharmaverse.org/" background-interactive="true"}
+## House-keeping
 
-## Pharma perspective: GxP + `r fontawesome::fa("earth")` R `r fontawesome::fa("cube")` = `r fontawesome::fa("heart")`
+-   Course website at [openstatsware.github.io/shortcourse-seoul2026](https://openstatsware.github.io/shortcourse-seoul2026)
+    -   all slides
+    -   sources available at [github.com/openstatsware/shortcourse-seoul2026](https://github.com/openstatsware/shortcourse-seoul2026)
+    -   all materials CC-BY-SA 4.0
 
--   Quality, burden sharing: open-source [pharmaverse](https://pharmaverse.org/) and [openstatsware](https://openstatsware.org)
--   Open methodological packages can de-risk innovative methods
--   R packages make (statistical/methodological) code
-    -   testable (with documented evidence thereof, [CFR Part 11](https://en.wikipedia.org/wiki/Title_21_CFR_Part_11))
-    -   reusable
-    -   shareable
-    -   easier to document
+## What you will need
+
+-   [Github.com](https://github.com/) (free) account `r fontawesome::fa("github")`
+-   Local R development environment with
+    -   git `r fontawesome::fa("git-alt")`
+    -   Rtools/R/Rstudio IDE `r fontawesome::fa("r-project")`
+-   Install additional R packages using the [installation script](slides/download/install.R)
+-   Curiosity `r emoji::emoji("curious")`
+
+## Speed intros and what would you like to learn?
+
+- Name? `r emoji::emoji("earth")`
+- Organization? `r emoji::emoji("office")`
+- Motivation for this workshop/ what would you like to learn `r emoji::emoji("brain")`
+
+## A couple of advance questions 
+
+> For someone with no prior background in programming, approximately how long would it take to reach a competent amateur level — several months or several years?
+
+Depends on the fluency level and how intensive your learning program is. You can compare it to learning a foreign language: 
+
+- A 6 months intensive course, 30 hours per week, can get you to a daily conversational level quickly.
+- If you only spend 1 hour per week, it will take you several years to reach the same level, or you might never reach it at all.
+- But if you knew already a (similar) programming language, you could reach the competent amateur level much faster.
+
+## A couple of advance questions (cont'd)
+
+> Although people often say that AI can now generate most of the code, which aspects of R should a beginner focus on to become genuinely comfortable and proficient with the language?
+
+<!-- Caveat: This workshop is not about learning R, we actually assume that you already can program functions in R e.g.  -->
+
+I would recommend to focus on the basic R programming concepts first, including:
+
+- Read / Eval / Print Loop (REPL)
+- Vectors, lists, and data frames
+- Functions
+- Control flow
+
+And then dive deeper into the R package ecosystem relevant to your work.
+
+## A couple of advance questions (cont'd)
+
+> In the age of foundation models, what capabilities or roles do you think will remain uniquely important for human biomedical researchers?
+
+Personally I think AI systems are still far away from artificial general intelligence (AGI) and true "understanding" or "reasoning" and even "learning". Therefore, researchers still need to:
+
+- truly understand the basic concepts of their field
+- communicate with other disciplines and stakeholders
+- strategically plan and intuitively innovate their research
+
+## A couple of advance questions (cont'd)
+
+> For early-career biomedical researchers who hope to work globally in computational genomics and translational medicine, which skills and research experiences should they prioritize over the next few years?
+
+I am not an expert in that field in particular, but I hope the previous remarks are helpful as a start.
+
+## A couple of advance questions (cont'd)
+
+> How do industry and academia differ in their use of AI and bioinformatics tools?
+
+For bioinformatics tools I am not an expert. Otherwise I have the impression that industry is starting to use AI tools quickly, while academia can be slower and more cautious. 
+
+## A couple of advance questions (cont'd)
+
+> Expert prior elicitation methods such as [SHELF](https://shelf.sites.sheffield.ac.uk/) were originally developed largely in fields such as clinical trials. Do you think these methods can also work effectively in areas such as consumer research or marketing, where expert judgment may be more uncertain and the available data are often noisier? When applying these methods to a different domain, how much of the elicitation process or methodological framework would need to be redesigned?
+
+I think many methods developed for clinical trials can be applied to experiments in other areas (that is e.g. my experience when I worked at Google). However, the business is quite different and there are less rigorous regulations outside of clinical trials. Therefore, the level of rigor being used is typically lower. On the other hand, there is more freedom to try out new methods in these other domains.
 
 # License information {.smaller}
 

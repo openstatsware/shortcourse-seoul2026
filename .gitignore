@@ -13,3 +13,5 @@ docs
 
 /.luarc.json
 Rprof.out
+
+**/*.quarto_ipynb
