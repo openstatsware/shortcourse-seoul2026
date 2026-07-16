@@ -137,7 +137,7 @@
     "href": "slides/05_publication.html#r-hub-platforms",
     "title": "5 Publication",
     "section": "R-Hub platforms",
-    "text": "R-Hub platforms\n\nlibrary(rhub)\nrhub::rhub_platforms()\n\n── Virtual machines ───────────────────────────────────────────────────────────\n 1 [VM]  linux\n   All R versions on GitHub Actions ubuntu-latest\n 2 [VM]  m1-san\n   All R versions on GitHub Actions macos-15, ASAN + UBSAN on macOS\n 3 [VM]  macos\n   All R versions on GitHub Actions macos-15-intel\n 4 [VM]  macos-arm64\n   All R versions on GitHub Actions macos-latest\n 5 [VM]  windows\n   All R versions on GitHub Actions windows-latest\n\n── Containers ─────────────────────────────────────────────────────────────────\n 6 [CT]  atlas  [ATLAS]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/atlas:latest\n 7 [CT]  c23  [C23]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/c23:latest\n 8 [CT]  clang-asan  [asan, clang-ASAN]\n   R Under development (unstable) (2026-07-04 r90207) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang-asan:latest\n 9 [CT]  clang-ubsan  [clang-UBSAN, ubsan]\n   R Under development (unstable) (2026-07-04 r90207) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang-ubsan:latest\n10 [CT]  clang16  [clang16]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang16:latest\n11 [CT]  clang17  [clang17]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang17:latest\n12 [CT]  clang18  [clang18]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang18:latest\n13 [CT]  clang19  [clang19]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang19:latest\n14 [CT]  clang20  [clang20]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang20:latest\n15 [CT]  clang21  [clang21]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang21:latest\n16 [CT]  clang22  [clang22]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang22:latest\n17 [CT]  donttest  [donttest]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/donttest:latest\n18 [CT]  gcc-asan  [gcc-ASAN, gcc-UBSAN]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/gcc-asan:latest\n19 [CT]  gcc13  [gcc13]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 38 (Conta…\n   ghcr.io/r-hub/containers/gcc13:latest\n20 [CT]  gcc14  [gcc14]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 40 (Conta…\n   ghcr.io/r-hub/containers/gcc14:latest\n21 [CT]  gcc15  [gcc15]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/gcc15:latest\n22 [CT]  gcc16  [gcc16]\n   R Under development (unstable) (2026-07-04 r90207) on Fedora Linux 44 (Conta…\n   ghcr.io/r-hub/containers/gcc16:latest\n23 [CT]  intel  [Intel]\n   R Under development (unstable) (2026-02-19 r89439) on Fedora Linux 38 (Conta…\n   ghcr.io/r-hub/containers/intel:latest\n24 [CT]  lto  [LTO]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/lto:latest\n25 [CT]  mkl  [MKL]\n   R Under development (unstable) (2026-07-04 r90207) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/mkl:latest\n26 [CT]  nold  [noLD]\n   R Under development (unstable) (2026-07-04 r90207) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/nold:latest\n27 [CT]  noremap  [noRemap]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/noremap:latest\n28 [CT]  nosuggests  [noSuggests]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/nosuggests:latest\n29 [CT]  rchk  [rchk]\n   R Under development (unstable) (2026-07-04 r90207) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/rchk:latest\n30 [CT]  ubuntu-clang  [r-devel-linux-x86_64-debian-clang]\n   R Under development (unstable) (2026-07-04 r90207) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/ubuntu-clang:latest\n31 [CT]  ubuntu-gcc12  [r-devel-linux-x86_64-debian-gcc]\n   R Under development (unstable) (2026-04-13 r89874) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/ubuntu-gcc12:latest\n32 [CT]  ubuntu-next  [r-next, r-patched, r-patched-linux-x86_64]\n   R version 4.6.1 RC (2026-06-18 r90185) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/ubuntu-next:latest\n33 [CT]  ubuntu-release  [r-release, r-release-linux-x86_64, ubuntu]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/ubuntu-release:latest\n34 [CT]  valgrind  [valgrind]\n   R Under development (unstable) (2026-07-04 r90207) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/valgrind:latest\n35 [CT]  vnu  [vnu]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/vnu:latest"
+    "text": "R-Hub platforms\n\nlibrary(rhub)\nrhub::rhub_platforms()\n\n── Virtual machines ───────────────────────────────────────────────────────────\n 1 [VM]  linux\n   All R versions on GitHub Actions ubuntu-latest\n 2 [VM]  m1-san\n   All R versions on GitHub Actions macos-15, ASAN + UBSAN on macOS\n 3 [VM]  macos\n   All R versions on GitHub Actions macos-15-intel\n 4 [VM]  macos-arm64\n   All R versions on GitHub Actions macos-latest\n 5 [VM]  windows\n   All R versions on GitHub Actions windows-latest\n\n── Containers ─────────────────────────────────────────────────────────────────\n 6 [CT]  atlas  [ATLAS]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/atlas:latest\n 7 [CT]  c23  [C23]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/c23:latest\n 8 [CT]  clang-asan  [asan, clang-ASAN]\n   R Under development (unstable) (2026-07-15 r90261) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang-asan:latest\n 9 [CT]  clang-ubsan  [clang-UBSAN, ubsan]\n   R Under development (unstable) (2026-07-15 r90261) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang-ubsan:latest\n10 [CT]  clang16  [clang16]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang16:latest\n11 [CT]  clang17  [clang17]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang17:latest\n12 [CT]  clang18  [clang18]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang18:latest\n13 [CT]  clang19  [clang19]\n   R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang19:latest\n14 [CT]  clang20  [clang20]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang20:latest\n15 [CT]  clang21  [clang21]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang21:latest\n16 [CT]  clang22  [clang22]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/clang22:latest\n17 [CT]  donttest  [donttest]\n   R Under development (unstable) (2026-06-21 r90185) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/donttest:latest\n18 [CT]  gcc-asan  [gcc-ASAN, gcc-UBSAN]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/gcc-asan:latest\n19 [CT]  gcc13  [gcc13]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 38 (Conta…\n   ghcr.io/r-hub/containers/gcc13:latest\n20 [CT]  gcc14  [gcc14]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 40 (Conta…\n   ghcr.io/r-hub/containers/gcc14:latest\n21 [CT]  gcc15  [gcc15]\n   R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/gcc15:latest\n22 [CT]  gcc16  [gcc16]\n   R Under development (unstable) (2026-07-15 r90261) on Fedora Linux 44 (Conta…\n   ghcr.io/r-hub/containers/gcc16:latest\n23 [CT]  intel  [Intel]\n   R Under development (unstable) (2026-02-19 r89439) on Fedora Linux 38 (Conta…\n   ghcr.io/r-hub/containers/intel:latest\n24 [CT]  lto  [LTO]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/lto:latest\n25 [CT]  mkl  [MKL]\n   R Under development (unstable) (2026-07-15 r90261) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/mkl:latest\n26 [CT]  nold  [noLD]\n   R Under development (unstable) (2026-07-15 r90261) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/nold:latest\n27 [CT]  noremap  [noRemap]\n   R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/noremap:latest\n28 [CT]  nosuggests  [noSuggests]\n   R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/nosuggests:latest\n29 [CT]  rchk  [rchk]\n   R Under development (unstable) (2026-07-15 r90261) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/rchk:latest\n30 [CT]  ubuntu-clang  [r-devel-linux-x86_64-debian-clang]\n   R Under development (unstable) (2026-07-15 r90261) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/ubuntu-clang:latest\n31 [CT]  ubuntu-gcc12  [r-devel-linux-x86_64-debian-gcc]\n   R Under development (unstable) (2026-04-13 r89874) on Ubuntu 22.04.5 LTS\n   ghcr.io/r-hub/containers/ubuntu-gcc12:latest\n32 [CT]  ubuntu-next  [r-next, r-patched, r-patched-linux-x86_64]\n   R version 4.6.1 RC (2026-06-18 r90185) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/ubuntu-next:latest\n33 [CT]  ubuntu-release  [r-release, r-release-linux-x86_64, ubuntu]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/ubuntu-release:latest\n34 [CT]  valgrind  [valgrind]\n   R Under development (unstable) (2026-07-15 r90261) on Fedora Linux 42 (Conta…\n   ghcr.io/r-hub/containers/valgrind:latest\n35 [CT]  vnu  [vnu]\n   R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS\n   ghcr.io/r-hub/containers/vnu:latest"
   },
   {
     "objectID": "slides/05_publication.html#github-actions",
@@ -672,13 +672,6 @@
     "text": "Possible next steps\n\nBookmark the openstatsguide as a quick reference for good practices for R package development\nBring the information back to your colleagues in your organization\nStart building your first own package and share internally first\nLater publish it open source on GitHub and submit it to CRAN\nLearn about more tips and tricks how to extend R\n\n\nPhoto by Pixabay on pexels.com"
   },
   {
-    "objectID": "slides/01_intro.html#disclaimer",
-    "href": "slides/01_intro.html#disclaimer",
-    "title": "1 Introduction",
-    "section": "Disclaimer",
-    "text": "Disclaimer\n\nAny opinions expressed in this presentation and on the following slides are solely those of the presenter and not necessarily those of their employers."
-  },
-  {
     "objectID": "slides/01_intro.html#welcome-to-gswep4r-at-saihst",
     "href": "slides/01_intro.html#welcome-to-gswep4r-at-saihst",
     "title": "1 Introduction",
@@ -690,7 +683,7 @@
     "href": "slides/01_intro.html#daniel-sabanés-bové",
     "title": "1 Introduction",
     "section": "Daniel Sabanés Bové",
-    "text": "Daniel Sabanés Bové\n\n\n\n\n\nPh.D. in Statistics from University of Zurich, Bayesian Model Selection\nBiostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for 4 years\nHappy Taipei expat since summer 2024, where I started roadbiking 🚴\nCo-founder of inferential.bio, RCONIS and partner at RPACT\nMultiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of openstatsware\nFeel free to connect"
+    "text": "Daniel Sabanés Bové\n\n\n\n\n\nFeel free to connect   \n\n\n\n\nPh.D. in Statistics from University of Zurich, Bayesian Model Selection\nBiostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for 4 years\nHappy Taipei expat since summer 2024, where I started roadbiking 🚴\nCo-founder of inferential.bio, RCONIS and partner at RPACT\nMultiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of openstatsware"
   },
   {
     "objectID": "slides/01_intro.html#openstatsware",
@@ -705,6 +698,34 @@
     "title": "1 Introduction",
     "section": "What you will learn here",
     "text": "What you will learn here\n\nUnderstand the basic structure of an R package\nCreate your own R \nLearn about & apply professional  development workflow\nLearn & apply fundamentals of quality control for R \nGet crash-course in version control and modern collaboration techniques on GitHub.com\nLearn how to make an R  available to others"
+  },
+  {
+    "objectID": "slides/01_intro.html#do-we-still-need-to-learn-this---ai-can-do-it",
+    "href": "slides/01_intro.html#do-we-still-need-to-learn-this---ai-can-do-it",
+    "title": "1 Introduction",
+    "section": "Do we still need to learn this - AI can do it?",
+    "text": "Do we still need to learn this - AI can do it?\n\nIn the past, carpenters exclusively used saw, hand drill, and hammer\nFor a long time now, we have power tools, like electric saws and drills\nAnd we have had computer aided design (CAD) software for decades\nWe have even 3D printers, which can produce furniture directly\nNevertheless, carpenters still start their apprenticeship by learning how to use a saw and hammer, and build furniture by hand\nIn the same way, we still need to learn the basics of good software engineering, even though AI tools can help us later to execute the work faster and more efficiently"
+  },
+  {
+    "objectID": "slides/01_intro.html#what-do-we-mean-by-gswep4r",
+    "href": "slides/01_intro.html#what-do-we-mean-by-gswep4r",
+    "title": "1 Introduction",
+    "section": "What do we mean by GSWEP4R*?",
+    "text": "What do we mean by GSWEP4R*?\n\n\nApplying concept of “Good XYZ Practice” to SWE with R\nImprove quality and longevity of R code/packages\nNot a universal standard; we share our perspectives\nCollection of best practices\nDo not reinvent the wheel: learn from the community\n\n\n* Good Software Engineering Practice for R Packages"
+  },
+  {
+    "objectID": "slides/01_intro.html#why-care-about-gswep4r",
+    "href": "slides/01_intro.html#why-care-about-gswep4r",
+    "title": "1 Introduction",
+    "section": "Why care about GSWEP4R?",
+    "text": "Why care about GSWEP4R?\n\nR is one of the most successful statistical programming languages\nR is a powerful yet complex ecosystem\n\nCore component: R packages\nMature user & contributor community\nWhere deeper understanding is crucial, even to just assess quality\n\nAnalyses increasingly require complex scripts/programs\nThe concepts are applicable to other languages, too (Python, Julia, etc.)"
+  },
+  {
+    "objectID": "slides/01_intro.html#start-small---from-script-to-package",
+    "href": "slides/01_intro.html#start-small---from-script-to-package",
+    "title": "1 Introduction",
+    "section": "Start small - from script to package",
+    "text": "Start small - from script to package\n\nEncapsulate behavior (functions)\nAvoid global state/variables\nAdopt consistent coding style\nDocument well\nAdd test cases\nRefactor and optimize code\nVersion your code\nShare as ‘bundle’\n\n\\(\\leadsto\\) R package"
   },
   {
     "objectID": "slides/01_intro.html#program-outline",
@@ -732,42 +753,49 @@
     "href": "slides/01_intro.html#speed-intros-and-what-would-you-like-to-learn",
     "title": "1 Introduction",
     "section": "Speed intros and what would you like to learn?",
-    "text": "Speed intros and what would you like to learn?\n\nName? 🌎\nOrganization? 🏢\nMotivation for this workshop/ what would you like to learn 🧠\nFavorite food? 🍠\nFavorite music? 🎹"
+    "text": "Speed intros and what would you like to learn?\n\nName? 🌏\nOrganization? 🏢\nMotivation for this workshop/ what would you like to learn 🧠"
   },
   {
-    "objectID": "slides/01_intro.html#what-do-we-mean-by-gswep4r",
-    "href": "slides/01_intro.html#what-do-we-mean-by-gswep4r",
+    "objectID": "slides/01_intro.html#a-couple-of-advance-questions",
+    "href": "slides/01_intro.html#a-couple-of-advance-questions",
     "title": "1 Introduction",
-    "section": "What do we mean by GSWEP4R*?",
-    "text": "What do we mean by GSWEP4R*?\n\n\nApplying concept of “Good XYZ Practice” to SWE with R\nImprove quality and longevity of R code/packages\nNot a universal standard; we share our perspectives\nCollection of best practices\nDo not reinvent the wheel: learn from the community\n\n\n* Good Software Engineering Practice for R Packages"
+    "section": "A couple of advance questions",
+    "text": "A couple of advance questions\n\nFor someone with no prior background in programming, approximately how long would it take to reach a competent amateur level — several months or several years?\n\nDepends on the fluency level and how intensive your learning program is. You can compare it to learning a foreign language:\n\nA 6 months intensive course, 30 hours per week, can get you to a daily conversational level quickly.\nIf you only spend 1 hour per week, it will take you several years to reach the same level, or you might never reach it at all.\nBut if you knew already a (similar) programming language, you could reach the competent amateur level much faster."
   },
   {
-    "objectID": "slides/01_intro.html#why-care-about-gswep4r",
-    "href": "slides/01_intro.html#why-care-about-gswep4r",
+    "objectID": "slides/01_intro.html#a-couple-of-advance-questions-contd",
+    "href": "slides/01_intro.html#a-couple-of-advance-questions-contd",
     "title": "1 Introduction",
-    "section": "Why care about GSWEP4R?",
-    "text": "Why care about GSWEP4R?\n\nR is one of the most successful statistical programming languages\nR is a powerful yet complex ecosystem\n\nCore component: R packages\nMature user & contributor community\nWhere deeper understanding is crucial, even to just assess quality\n\nAnalyses increasingly require complex scripts/programs\nThe concepts are applicable to other languages, too (Python, Julia, etc.)"
+    "section": "A couple of advance questions (cont’d)",
+    "text": "A couple of advance questions (cont’d)\n\nAlthough people often say that AI can now generate most of the code, which aspects of R should a beginner focus on to become genuinely comfortable and proficient with the language?\n\n\nI would recommend to focus on the basic R programming concepts first, including:\n\nRead / Eval / Print Loop (REPL)\nVectors, lists, and data frames\nFunctions\nControl flow\n\nAnd then dive deeper into the R package ecosystem relevant to your work."
   },
   {
-    "objectID": "slides/01_intro.html#start-small---from-script-to-package",
-    "href": "slides/01_intro.html#start-small---from-script-to-package",
+    "objectID": "slides/01_intro.html#a-couple-of-advance-questions-contd-1",
+    "href": "slides/01_intro.html#a-couple-of-advance-questions-contd-1",
     "title": "1 Introduction",
-    "section": "Start small - from script to package",
-    "text": "Start small - from script to package\n\nEncapsulate behavior (functions)\nAvoid global state/variables\nAdopt consistent coding style\nDocument well\nAdd test cases\nRefactor and optimize code\nVersion your code\nShare as ‘bundle’\n\n\\(\\leadsto\\) R package"
+    "section": "A couple of advance questions (cont’d)",
+    "text": "A couple of advance questions (cont’d)\n\nIn the age of foundation models, what capabilities or roles do you think will remain uniquely important for human biomedical researchers?\n\nPersonally I think AI systems are still far away from artificial general intelligence (AGI) and true “understanding” or “reasoning” and even “learning”. Therefore, researchers still need to:\n\ntruly understand the basic concepts of their field\ncommunicate with other disciplines and stakeholders\nstrategically plan and intuitively innovate their research"
   },
   {
-    "objectID": "slides/01_intro.html#the-r-package-ecosystem---huge-success",
-    "href": "slides/01_intro.html#the-r-package-ecosystem---huge-success",
+    "objectID": "slides/01_intro.html#a-couple-of-advance-questions-contd-2",
+    "href": "slides/01_intro.html#a-couple-of-advance-questions-contd-2",
     "title": "1 Introduction",
-    "section": "The R package ecosystem - huge success",
-    "text": "The R package ecosystem - huge success"
+    "section": "A couple of advance questions (cont’d)",
+    "text": "A couple of advance questions (cont’d)\n\nFor early-career biomedical researchers who hope to work globally in computational genomics and translational medicine, which skills and research experiences should they prioritize over the next few years?\n\nI am not an expert in that field in particular, but I hope the previous remarks are helpful as a start."
   },
   {
-    "objectID": "slides/01_intro.html#pharma-perspective-gxp-r",
-    "href": "slides/01_intro.html#pharma-perspective-gxp-r",
+    "objectID": "slides/01_intro.html#a-couple-of-advance-questions-contd-3",
+    "href": "slides/01_intro.html#a-couple-of-advance-questions-contd-3",
     "title": "1 Introduction",
-    "section": "Pharma perspective: GxP +  R  = ",
-    "text": "Pharma perspective: GxP +  R  = \n\nQuality, burden sharing: open-source pharmaverse and openstatsware\nOpen methodological packages can de-risk innovative methods\nR packages make (statistical/methodological) code\n\ntestable (with documented evidence thereof, CFR Part 11)\nreusable\nshareable\neasier to document"
+    "section": "A couple of advance questions (cont’d)",
+    "text": "A couple of advance questions (cont’d)\n\nHow do industry and academia differ in their use of AI and bioinformatics tools?\n\nFor bioinformatics tools I am not an expert. Otherwise I have the impression that industry is starting to use AI tools quickly, while academia can be slower and more cautious."
+  },
+  {
+    "objectID": "slides/01_intro.html#a-couple-of-advance-questions-contd-4",
+    "href": "slides/01_intro.html#a-couple-of-advance-questions-contd-4",
+    "title": "1 Introduction",
+    "section": "A couple of advance questions (cont’d)",
+    "text": "A couple of advance questions (cont’d)\n\nExpert prior elicitation methods such as SHELF were originally developed largely in fields such as clinical trials. Do you think these methods can also work effectively in areas such as consumer research or marketing, where expert judgment may be more uncertain and the available data are often noisier? When applying these methods to a different domain, how much of the elicitation process or methodological framework would need to be redesigned?\n\nI think many methods developed for clinical trials can be applied to experiments in other areas (that is e.g. my experience when I worked at Google). However, the business is quite different and there are less rigorous regulations outside of clinical trials. Therefore, the level of rigor being used is typically lower. On the other hand, there is more freedom to try out new methods in these other domains."
   },
   {
     "objectID": "slides/02_r_packages.html#disclaimer",
