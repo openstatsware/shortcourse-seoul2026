@@ -65,6 +65,18 @@ Prior to the short course, participants should
 
 For the course, participants are required to use their own laptop to be able to participate in the exercises.
 
+### Material for Questions from the Course
+
+For Shiny: 
+
+-   Shiny considerations: [slides](https://rconis.github.io/workshop-r-swe-zrh/slides/07_shiny.html)
+
+For submission to health authorities etc:
+
+-   Reproducibility considerations: [slides](https://rconis.github.io/workshop-r-swe-zrh/slides/10_reproducibility.html)
+-   Considerations for R submissions in Japan: [PharmaSUG paper](https://pharmasug.org/proceedings/2025/PO/PharmaSUG-2025-PO-140.pdf)
+-   Pilot 3 summary of R submissions working group: [PharmaSUG paper](https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_PP17.pdf)
+
 ### Optional Reading List
 
 -   Excellent and very comprehensive [R Packages (2e)](https://r-pkgs.org/)
