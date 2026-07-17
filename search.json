@@ -158,7 +158,7 @@
     "href": "slides/01_intro.html#daniel-sabanés-bové",
     "title": "1 Introduction",
     "section": "Daniel Sabanés Bové",
-    "text": "Daniel Sabanés Bové\n\n\n\n\n\nFeel free to connect   \n\n\n\n\nPh.D. in Statistics from University of Zurich, Bayesian Model Selection\nBiostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for 4 years\nHappy Taipei expat since summer 2024, where I started roadbiking 🚴\nCo-founder of inferential.bio, RCONIS and partner at RPACT\nMultiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of openstatsware"
+    "text": "Daniel Sabanés Bové\n\n\n\n\n\nFeel free to connect   \n\n\n\n\nPh.D. in Statistics from University of Zurich, Bayesian Model Selection\nBiostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for 4 years\nHappy Taipei expat since summer 2024, where I started roadbiking 🚴‍♂️\nCo-founder of inferential.bio, RCONIS and partner at RPACT\nMultiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of openstatsware"
   },
   {
     "objectID": "slides/01_intro.html#openstatsware",
@@ -228,7 +228,7 @@
     "href": "slides/01_intro.html#speed-intros-and-what-would-you-like-to-learn",
     "title": "1 Introduction",
     "section": "Speed intros and what would you like to learn?",
-    "text": "Speed intros and what would you like to learn?\n\nName? 🌎\nOrganization? 🏢\nMotivation for this workshop/ what would you like to learn 🧠"
+    "text": "Speed intros and what would you like to learn?\n\nName? 🌍\nOrganization? 🏢\nMotivation for this workshop/ what would you like to learn 🧠"
   },
   {
     "objectID": "slides/01_intro.html#a-couple-of-advance-questions",
@@ -970,7 +970,7 @@
     "href": "index.html#prerequisites-technical-setup",
     "title": "Good Software Engineering Practice for R Packages",
     "section": "Prerequisites & Technical Setup",
-    "text": "Prerequisites & Technical Setup\nPrior to the short course, participants should\n\nSet up a (free) GitHub.com account.\n\nNote: There are other git platforms like Gitlab or Bitbucket, but we made the choice to go with GitHub.com for the course, since it is by far the most relevant git platform in the R community.\n\nInstall the latest R and RStudio software.\nInstall Rtools (on Windows) or the required tools (on macOS) to compile/build packages from source code.\nInstall additional R packages using the installation script.\n\nFor the course, participants are required to use their own laptop to be able to participate in the exercises.\n\nOptional Reading List\n\nExcellent and very comprehensive R Packages (2e)\n(Hardcore) description of how Writing R Extensions works\nGitHub ‘Hello World’ tutorial on how to use GitHub.com (does not require git command line knowledge)\nTutorial on version control with git and SVN (we will be using git)\nCommand line git mini intro trygit\nFirst steps with git & github by RStudio\nRStudio cheatsheets/ Git & GitHub\nExcuse Me, Do You Have a Moment to Talk About Version Control? by Jennifer Bryan\nVersion Control with Git course material by The Carpentries"
+    "text": "Prerequisites & Technical Setup\nPrior to the short course, participants should\n\nSet up a (free) GitHub.com account.\n\nNote: There are other git platforms like Gitlab or Bitbucket, but we made the choice to go with GitHub.com for the course, since it is by far the most relevant git platform in the R community.\n\nInstall the latest R and RStudio software.\nInstall Rtools (on Windows) or the required tools (on macOS) to compile/build packages from source code.\nInstall additional R packages using the installation script.\n\nFor the course, participants are required to use their own laptop to be able to participate in the exercises.\n\nMaterial for Questions from the Course\nFor Shiny:\n\nShiny considerations: slides\n\nFor submission to health authorities etc:\n\nReproducibility considerations: slides\nConsiderations for R submissions in Japan: PharmaSUG paper\nPilot 3 summary of R submissions working group: PharmaSUG paper\n\n\n\nOptional Reading List\n\nExcellent and very comprehensive R Packages (2e)\n(Hardcore) description of how Writing R Extensions works\nGitHub ‘Hello World’ tutorial on how to use GitHub.com (does not require git command line knowledge)\nTutorial on version control with git and SVN (we will be using git)\nCommand line git mini intro trygit\nFirst steps with git & github by RStudio\nRStudio cheatsheets/ Git & GitHub\nExcuse Me, Do You Have a Moment to Talk About Version Control? by Jennifer Bryan\nVersion Control with Git course material by The Carpentries"
   },
   {
     "objectID": "index.html#material-from-past-events",
