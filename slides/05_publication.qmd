@@ -188,7 +188,7 @@ rhub::rhub_platforms()
 - It is also possible to use [GitHub Actions](https://docs.github.com/en/actions) to run `R CMD check`
 - Free for public repositories, paid service for private repositories
 - Checks will be run every time someone pushes a commit to a repository hosted on GitHub
-- Easy setup from your R console: `usethis::use_github_action_check_standard()`
+- Easy setup from your R console: `usethis::use_github_action("check-standard")`
   - This runs a standard `R CMD check ` on three major operating systems
 - Script and documentation are developed and maintained by the `r-lib` organization [here](https://github.com/r-lib/actions/tree/v2/check-r-package)
 
