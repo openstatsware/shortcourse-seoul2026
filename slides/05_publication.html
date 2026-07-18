@@ -529,10 +529,10 @@ r-devel-linux-x86_64-debian-gcc Check: Result: Note_to_CRAN_maintainers Maintain
    R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/c23:latest
  8 [CT]  clang-asan  [asan, clang-ASAN]
-   R Under development (unstable) (2026-07-15 r90261) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2026-07-17 r90265) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/clang-asan:latest
  9 [CT]  clang-ubsan  [clang-UBSAN, ubsan]
-   R Under development (unstable) (2026-07-15 r90261) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2026-07-17 r90265) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/clang-ubsan:latest
 10 [CT]  clang16  [clang16]
    R Under development (unstable) (2026-03-15 r89629) on Ubuntu 22.04.5 LTS
@@ -571,7 +571,7 @@ r-devel-linux-x86_64-debian-gcc Check: Result: Note_to_CRAN_maintainers Maintain
    R Under development (unstable) (2026-03-15 r89629) on Fedora Linux 42 (Conta…
    ghcr.io/r-hub/containers/gcc15:latest
 22 [CT]  gcc16  [gcc16]
-   R Under development (unstable) (2026-07-15 r90261) on Fedora Linux 44 (Conta…
+   R Under development (unstable) (2026-07-17 r90265) on Fedora Linux 44 (Conta…
    ghcr.io/r-hub/containers/gcc16:latest
 23 [CT]  intel  [Intel]
    R Under development (unstable) (2026-02-19 r89439) on Fedora Linux 38 (Conta…
@@ -580,10 +580,10 @@ r-devel-linux-x86_64-debian-gcc Check: Result: Note_to_CRAN_maintainers Maintain
    R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS
    ghcr.io/r-hub/containers/lto:latest
 25 [CT]  mkl  [MKL]
-   R Under development (unstable) (2026-07-15 r90261) on Fedora Linux 42 (Conta…
+   R Under development (unstable) (2026-07-17 r90265) on Fedora Linux 42 (Conta…
    ghcr.io/r-hub/containers/mkl:latest
 26 [CT]  nold  [noLD]
-   R Under development (unstable) (2026-07-15 r90261) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2026-07-17 r90265) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/nold:latest
 27 [CT]  noremap  [noRemap]
    R Under development (unstable) (2026-03-14 r89623) on Ubuntu 22.04.5 LTS
@@ -592,10 +592,10 @@ r-devel-linux-x86_64-debian-gcc Check: Result: Note_to_CRAN_maintainers Maintain
    R Under development (unstable) (2026-06-21 r90185) on Fedora Linux 42 (Conta…
    ghcr.io/r-hub/containers/nosuggests:latest
 29 [CT]  rchk  [rchk]
-   R Under development (unstable) (2026-07-15 r90261) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2026-07-17 r90265) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/rchk:latest
 30 [CT]  ubuntu-clang  [r-devel-linux-x86_64-debian-clang]
-   R Under development (unstable) (2026-07-15 r90261) on Ubuntu 22.04.5 LTS
+   R Under development (unstable) (2026-07-17 r90265) on Ubuntu 22.04.5 LTS
    ghcr.io/r-hub/containers/ubuntu-clang:latest
 31 [CT]  ubuntu-gcc12  [r-devel-linux-x86_64-debian-gcc]
    R Under development (unstable) (2026-04-13 r89874) on Ubuntu 22.04.5 LTS
@@ -607,7 +607,7 @@ r-devel-linux-x86_64-debian-gcc Check: Result: Note_to_CRAN_maintainers Maintain
    R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS
    ghcr.io/r-hub/containers/ubuntu-release:latest
 34 [CT]  valgrind  [valgrind]
-   R Under development (unstable) (2026-07-15 r90261) on Fedora Linux 42 (Conta…
+   R Under development (unstable) (2026-07-17 r90265) on Fedora Linux 42 (Conta…
    ghcr.io/r-hub/containers/valgrind:latest
 35 [CT]  vnu  [vnu]
    R version 4.6.1 (2026-06-24) on Ubuntu 24.04.4 LTS
@@ -621,7 +621,7 @@ r-devel-linux-x86_64-debian-gcc Check: Result: Note_to_CRAN_maintainers Maintain
 <li>It is also possible to use <a href="https://docs.github.com/en/actions">GitHub Actions</a> to run <code>R CMD check</code></li>
 <li>Free for public repositories, paid service for private repositories</li>
 <li>Checks will be run every time someone pushes a commit to a repository hosted on GitHub</li>
-<li>Easy setup from your R console: <code>usethis::use_github_action_check_standard()</code>
+<li>Easy setup from your R console: <code>usethis::use_github_action("check-standard")</code>
 <ul>
 <li>This runs a standard <code>R CMD check</code> on three major operating systems</li>
 </ul></li>
